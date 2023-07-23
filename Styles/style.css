@@ -1,0 +1,562 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.h{
+  font-size: 40px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 253, 251, 0.2); /* Background color for the text */
+  color: black;
+  padding: 10px;
+  font-size: 50px; /* You can adjust the font size as per your requirement */
+  font-weight: bold;
+  word-spacing: 1vh;
+  width: 70%;
+  height: 70%;
+  text-align: center;
+}
+
+.image-text-p{
+  text-align: center;
+  padding-top: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* ........................ */
+
+
+/* Header Css Start */
+header {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+  .header-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-menu li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .header-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .header-heading{
+    height: 100px;
+    width: 200px;
+  }
+  /* CSS for the sub-menu */
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 9999; /* Ensure the sub-menu appears on top */
+  }
+  
+  .header-menu li:hover .sub-menu {
+    display: block;
+  }
+
+  /* HEADER CSS END HERE */
+
+
+/* Add these styles to align header items to the right */
+
+
+.backgr{
+  width: 90%;
+  background-color: #333;
+}
+
+
+.h{
+font-size: 40px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin: 0;
+}
+    
+
+/* mid banner */
+
+.banner-mid {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.banner-mid img {
+  width: 80%;
+  height: 30%;
+  object-fit: cover;
+}
+
+
+.banner-text h1 {
+  font-size: 36px;
+  margin: 0;
+}
+   
+
+.h1-1{
+margin-top: 200px;
+font-size: 40px;
+font-weight: lighter;
+font-family:Georgia, 'Times New Roman', Times, serif;
+word-spacing: normal;
+text-transform: uppercase;
+
+
+}
+
+.dark{
+  background-color:  rgba(3, 3, 3, 0.9);
+  height: 450px;
+  margin-bottom: 100px;
+}
+
+.dark h1{
+  color: #fff ;
+  padding-top: 50px;
+  font-size: 60px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.dark p{
+  color: #fff ;
+  width: 70%;
+  font-weight:lighter;  
+}
+
+.dark h3{
+  width: 10%;
+  border-bottom: 30px solid  #cc6f05;
+  border-width: 20px;
+}
+
+.cards-section {
+  padding: 50px;
+  margin-bottom: 350px;
+  
+}
+
+/* 
+.cards-section h2 {
+  text-align: center;
+} */
+
+.card {
+  width: 300px;
+  display: inline-block;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.card p{
+  text-align: justify;
+  padding: 10px;
+  font-weight: lighter;
+  word-spacing: 0.5vh;
+  color: #000;
+  width: 300px;
+}
+
+.card img{
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+
+}
+
+
+
+
+
+/* CSS styles for the round image carousel */
+.slider {
+height: 250px;
+margin: auto;
+width: 50%;
+position: relative;
+width: 90%;
+display: grid;
+place-items: center;
+overflow: hidden;
+
+}
+
+
+.slide-track{
+display: flex;
+width: calc(250px * 18 );
+animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+0%{
+  transform: translateX(0);
+}
+100%{
+  transform: translateX(calc(-250px * 8));
+}
+}
+
+.slide{
+height: 200px;
+width: 250px;
+display: flex;
+align-items: center;
+padding: 15px;
+}
+
+.img{
+width: 200px;
+height: 100px;
+}
+
+.donate-div{
+width: 60%;
+margin-bottom: 60px;
+}
+
+.btn-gift{
+background-color: rgb(240, 30, 83);
+border: none;
+color: #fff;
+font-size: large;
+font-weight: bold;
+margin: 20px;
+border-radius: 100px;
+width: 150px;
+height: 45px;
+
+}
+
+.btn-gift:hover {
+background-color: #415bf3;
+color: #fff;
+}
+
+.donate-div p{
+font-weight: lighter;
+}
+
+/* Footer  */
+
+
+
+/* CSS styles for the dark-themed footer */
+.dark-footer {
+border-top: 10px solid #030d3d;
+background-color: #fff;
+color : black;
+padding: 30px 0;
+text-align: center;
+}
+
+.footer-social {
+text-align: right;
+margin-bottom: 20px;
+}
+
+.social-icon {
+display: inline-block;
+color: black;
+font-size: 24px;
+margin-right: 10px;
+padding: 20px;
+}
+
+
+
+
+/* footer first heading  */
+
+.image-text-table {
+width: 200px;
+border: none;
+border-collapse: collapse;
+margin: 20px;
+}
+
+.image-text-table td {
+
+border: none;
+}
+
+
+
+.image-column img {
+width: 150px;
+height: 150px;
+border-radius: 60%;
+}
+
+.text-column h2 {
+font-size: 15px;
+margin-left: 2px;
+margin-bottom: 10px;
+}
+
+.text-column p {
+font-size: 10px;
+
+margin-bottom: 10px;
+/* margin-left: 10px; */
+margin-right: 2px;
+}
+
+
+.image-text-table td.image-column {
+width: 30%;
+}
+
+.image-text-table td.text-column {
+width: 70%;
+height: 150px;
+
+}
+
+.image-text-table {
+width: 60%;
+table-layout: fixed;
+margin-bottom: 20px;
+}
+
+
+.image-text-table td h2,
+.image-text-table td p {
+text-align: left;
+}
+
+
+.image-text-table td {
+width: 25%; /* Set equal width for each column */
+}
+
+
+
+/* For table two of footer  */
+
+.four-column-table {
+width: 70%;
+border-collapse: collapse;
+margin-left: auto;
+margin-right: auto;
+height: 250px;
+margin-top: 50px;
+align-items: center;
+}
+
+.four-column-table th,
+.four-column-table td {
+text-align: left;
+border: none;
+padding: 10px;
+width: 25%;
+
+}
+
+.four-column-table th {
+color: black;
+font-size: 20px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+
+.four-column-table td ul {
+list-style-type: none;
+padding: 0;
+font-size: 15px;
+margin-top: 0px;
+}
+
+.four-column-table td ul li {
+margin-bottom: 5px;
+}
+
+.four-column-table td ul li a {
+color: black;
+font-size: 15px;
+font-weight: lighter;
+padding-bottom: px;
+margin-top: 2px;
+}
+.four-column-table td ul {
+color: black;
+font-size: 15px;
+font-weight: lighter;
+margin-top: 0px;
+}
+
+
+.four-column-table td ul li  {
+color: black;
+text-decoration: none;
+font-size: 15px;
+font-weight: lighter;
+padding-bottom: 10px;
+}
+
+
+.last-hf{
+font: 10px;
+margin-left: 350px;
+font-weight: lighter;
+font-family:Georgia, 'Times New Roman', Times, serif;
+margin-top: 40px;
+
+}
+
+.footer-text{
+font-size: x-small;
+}
+
+.icon{
+width: 30px;
+height: 30px;
+padding-right: 10px;
+padding-top: 0;
+}
+
+
+
+.table {
+border-collapse: collapse;
+width: 90%;
+}
+
+.table td {
+border: none;
+padding: 10px;
+width: 50%;
+}
+
+.table th{
+font: 10px;
+margin-left: 450px;
+font-weight: lighter;
+font-family:Georgia, 'Times New Roman', Times, serif;
+margin-top: 40px;
+}
+
+
+.last-hf1{
+font: 10px;
+margin-right: 170px;
+font-weight: lighter;
+font-family:Georgia, 'Times New Roman', Times, serif;
+margin-top: 10px;
+
+}
+
+.last-pf1{
+font-size: x-small;
+margin-right: 10px;
+font-weight: lighter;
+font-family:Georgia, 'Times New Roman', Times, serif;
+margin-top: 5px;
+
+}
+
+
+.mid-h{
+font-size: 80px;
+color: black;
+
+
+}
+
+.mid-div{
+border-left: 20px solid  #e77d04;
+border-radius: 10px;
+padding-left: 50px;
+width: 80%;
+text-align: left;
+}
+
+.mid-div-out{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.sec-p{
+padding: 30px;
+width: 80%;
+text-align: center;
+}
